@@ -10,3 +10,13 @@ type DatabaseConfig struct {
 type DBConfig struct {
 	Database DatabaseConfig `json:"database"`
 }
+
+type URLConfig struct {
+	URL      string `json:"url"`
+	Regex    string `json:"regex"`
+	Interval string `json:"interval"`
+}
+
+type URLsConfig struct {
+	URLs []URLConfig `json:"urls"`
+}

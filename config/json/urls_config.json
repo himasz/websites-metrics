@@ -1,0 +1,14 @@
+{
+  "urls": [
+    {
+      "url": "http://example.com",
+      "regex": "Example Domain",
+      "interval": "@every 3s"
+    },
+    {
+      "url": "http://www.examples.com/",
+      "regex": "examples",
+      "interval": "@every 10s"
+    }
+  ]
+}
