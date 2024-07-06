@@ -1,0 +1,8 @@
+{
+  "database": {
+    "user": "postgres",
+    "password": "password",
+    "dbname": "metrics",
+    "port": 5432
+  }
+}
