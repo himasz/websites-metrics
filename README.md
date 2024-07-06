@@ -1,41 +1,19 @@
-# Website Metrics Monitoring
-```
-## Project Structure
+## Website Metrics Monitoring
 
-websites_metrics/
-├── config/
-│   ├── config.go
-│   ├── config_loader.go
-│   └── db_config.json
-├── main.go
-├── models/
-│   └── metric.go
-├── repository/
-│   ├── postgres_metrics_repository.go
-│   └── metrics_repository_interface.go
-├── scheduler/
-│   ├── cron_scheduler.go
-│   └── scheduler_interface.go
-└── metrics/
-    ├── metrics_calculator_interface.go
-    └── url_metrics_calculator.go
-```
 ### Getting Started
-
-```
-### Prerequisites
+#### Prerequisites
 
 - Go 1.22.5
-- PostgreSQL database (docker compose is there)
+- PostgreSQL database (docker compose is there too)
 
-### Installation
+#### Installation
 
 1. Install dependencies:
     ```sh
     go mod tidy
     ```
 
-### Configuration
+#### Configuration
 
 1. Configure the PostgreSQL database connection in `config/db_config.json`:
     ```json
@@ -67,13 +45,41 @@ websites_metrics/
     }
     ```
 
-### Usage
+#### Usage
 
 1. Run the application:
     ```sh
     go run main.go
     ```
 
+#### Running Tests
+
+This project includes both unit tests and integration tests.
+To run the unit tests, use the following command:
+```sh
+go test ./... -short
+ ```
+
+### Project Structure
+```
+websites_metrics/
+├── config/
+│   ├── config.go
+│   ├── config_loader.go
+│   └── db_config.json
+├── main.go
+├── models/
+│   └── metric.go
+├── repository/
+│   ├── postgres_metrics_repository.go
+│   └── metrics_repository_interface.go
+├── scheduler/
+│   ├── cron_scheduler.go
+│   └── scheduler_interface.go
+└── metrics/
+├── metrics_calculator_interface.go
+└── url_metrics_calculator.go
+```
 ### Project Details
 
 #### Configuration Loader
