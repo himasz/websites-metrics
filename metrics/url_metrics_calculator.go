@@ -78,4 +78,4 @@ func (u *URLMetricsCalculator) CalculateMetrics(urlConfig models.URLConfig) (mod
 	}, nil
 }
 
-var _ IMetricsCalculator = (*URLMetricsCalculator)(nil)
+var _ IURLMetricsCalculator = (*URLMetricsCalculator)(nil)

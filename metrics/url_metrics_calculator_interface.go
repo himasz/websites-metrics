@@ -5,7 +5,7 @@ import (
 	"websites_metrics/models"
 )
 
-type IMetricsCalculator interface {
+type IURLMetricsCalculator interface {
 	CalculateMetrics(urlConfig models.URLConfig) (models.Metric, error)
 	RunMetricsCalculations(cfg config.URLsConfig)
 }

@@ -41,9 +41,9 @@ websites_metrics/
     ```json
     {
         "database": {
-            "user": "postgres",
-            "password": "password",
-            "dbname": "metrics",
+            "user": "yourusername",
+            "password": "yourpassword",
+            "dbname": "yourdatabase",
             "port": 5432
         }
     }
