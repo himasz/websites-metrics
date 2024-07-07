@@ -20,4 +20,4 @@ func (s *CronScheduler) Start() {
 	s.Cron.Start()
 }
 
-var _ IScheduler = (*CronScheduler)(nil) // Ensure CronScheduler implements Scheduler
+var _ IScheduler = (*CronScheduler)(nil)

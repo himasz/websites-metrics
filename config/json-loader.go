@@ -25,4 +25,4 @@ func (loader *JSONLoader) Load(fileName string, v interface{}) error {
 	return err
 }
 
-var _ ILoader = (*JSONLoader)(nil) // Ensure JSONConfigLoader implements ConfigLoader
+var _ ILoader = (*JSONLoader)(nil)

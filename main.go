@@ -43,7 +43,6 @@ func main() {
 	var repo repository.IMetricsRepository = repository.NewMetricsRepository(db)
 	var cronScheduler scheduler.IScheduler = scheduler.NewCronScheduler()
 
-	// Initialize URL metrics calculator with cron scheduler
 	metricsCalculator := &metrics.URLMetricsCalculator{
 		Repo:       repo,
 		IScheduler: cronScheduler,

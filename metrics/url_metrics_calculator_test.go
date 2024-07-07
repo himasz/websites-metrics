@@ -12,6 +12,7 @@ import (
 )
 
 func TestCalculateURLsMetrics(t *testing.T) {
+	// Use SQLite in-memory database for integration test
 	db, err := gorm.Open(sqlite.Open("file::memory:?cache=shared"), &gorm.Config{})
 	if err != nil {
 		t.Fatalf("Failed to connect database: %v", err)
