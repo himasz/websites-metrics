@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	var configLoader config.ILoader = &config.JSONLoader{}
+	var configLoader config.ILoader = &config.JSONConfigLoader{}
 
 	var dbCfg config.DBConfig
 	err := configLoader.Load("config/json/db_config.json", &dbCfg)

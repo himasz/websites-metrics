@@ -6,7 +6,7 @@ import (
 )
 
 func TestLoadConfig(t *testing.T) {
-	loader := JSONLoader{}
+	loader := JSONConfigLoader{}
 
 	type TestConfig struct {
 		TestField string `json:"test_field"`

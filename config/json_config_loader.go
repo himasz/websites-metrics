@@ -6,9 +6,9 @@ import (
 	"os"
 )
 
-type JSONLoader struct{}
+type JSONConfigLoader struct{}
 
-func (loader *JSONLoader) Load(fileName string, v interface{}) error {
+func (loader *JSONConfigLoader) Load(fileName string, v interface{}) error {
 	file, err := os.Open(fileName)
 	if err != nil {
 		return err
@@ -25,4 +25,4 @@ func (loader *JSONLoader) Load(fileName string, v interface{}) error {
 	return err
 }
 
-var _ ILoader = (*JSONLoader)(nil)
+var _ ILoader = (*JSONConfigLoader)(nil)

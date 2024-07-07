@@ -65,8 +65,11 @@ go test ./... -short
 websites_metrics/
 ├── config/
 │   ├── config.go
-│   ├── config_loader.go
-│   └── db_config.json
+│   ├── json_loader.go
+│   ├── config_loader_interface.go
+│   └── json
+│       ├── db_config.json
+│       └── urls_config.json
 ├── main.go
 ├── models/
 │   └── metric.go
@@ -82,7 +85,7 @@ websites_metrics/
 ```
 ### Project Details
 
-#### Configuration Loader
+#### Configuration ConfigLoader
 
 - Located in `config/config_loader.go`
 - Implements `Load` method to load JSON configurations
